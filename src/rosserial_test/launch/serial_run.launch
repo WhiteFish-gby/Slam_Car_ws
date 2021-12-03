@@ -1,0 +1,4 @@
+<launch>
+  <node   name ="rosserial_test"   pkg="rosserial_test"  type="rosserial_test_node" output="screen">
+  </node>
+</launch>
