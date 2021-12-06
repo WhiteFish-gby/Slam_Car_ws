@@ -3,9 +3,11 @@
         {
             "name": "Linux",
             "includePath": [
-                "/opt/ros/melodic/include" ,
-                "/home/ubuntu/catkin_ws/src/delta_lidar/sdk/include"
-
+                "/opt/ros/melodic/include/**",
+                "/home/ubuntu/catkin_ws/src/delta_lidar/sdk/include/**",
+                "/home/ubuntu/catkin_ws/src/serial_/include/**",
+                "/opt/ros/melodic/include",
+                "/home/ubuntu/catkin_ws/src/navigation/move_base/include/**"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/clang",

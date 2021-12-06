@@ -1,0 +1,11 @@
+<launch>
+  <!-- 启动传感器节点 -->
+  <include file="$(find delta_lidar)/launch/delta_lidar.launch" />
+  
+  <!-- 启动底盘里程计节点 -->
+  <include file="$(find realsense2_camera)/launch/my_t265.launch" />
+
+  <!-- 启动tf变换 -->
+  <node pkg="robot_setup_tf" type="tf_broadcaster" name="robot_setup_tf" output="screen">
+  </node>
+</launch>

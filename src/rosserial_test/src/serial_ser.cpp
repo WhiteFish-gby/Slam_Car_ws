@@ -20,7 +20,7 @@ int main(int argc, char **argv)
     ros::NodeHandle nh;
 
     //订阅主题，并配置回调函数
-    ros::Subscriber write_sub = nh.subscribe("write", 1000, write_callback);
+    ros::Subscriber write_sub = nh.subscribe("read", 1000, write_callback);
     //发布主题
     ros::Publisher read_pub = nh.advertise<std_msgs::String>("read", 1000);
 

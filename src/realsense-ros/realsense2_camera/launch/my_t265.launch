@@ -1,0 +1,4 @@
+<launch>
+  <include file="$(find realsense2_camera)/launch/rs_t265.launch" />
+  <remap from="/camera/odom/sample" to="nav_msgs/Odometry" />
+</launch>
