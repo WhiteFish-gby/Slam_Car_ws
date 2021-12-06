@@ -1,5 +1,9 @@
+# plugins: 
+#     - {name: static_map,       type: "costmap_2d::StaticLayer"}
+#     - {name: obstacles,        type: "costmap_2d::VoxelLayer"}
+plugins: []
 local_costmap:
-  global_frame: camera_pose_frame
+  global_frame: camera_odom_frame
   robot_base_frame: base_link
   update_frequency: 5.0
   publish_frequency: 2.0

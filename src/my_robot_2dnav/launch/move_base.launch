@@ -1,6 +1,10 @@
 <launch>
   <master auto="start"/>
 
+    <!-- 设置地图的配置文件 -->
+    <!-- <arg name="map" default="nav.yaml" /> -->
+    <!-- 运行地图服务器，并且加载设置的地图-->
+    <!-- <node name="map_server" pkg="map_server" type="map_server" args="$(find my_map_package)/map/$(arg map)"/> -->
   <!-- Run the map server -->
   <!-- <node name="map_server" pkg="map_server" type="map_server" args="~/my_map.pgm 0.05"/> -->
   <!-- <node name="map_server" pkg="map_server" type="map_server"/> -->
@@ -8,6 +12,9 @@
 
   <!--- Run AMCL -->
   <include file="$(find amcl)/examples/amcl_omni.launch" />
+  <!-- <node name="nav_core" pkg="nav_core" type="nav_core" /> -->
+  <!-- <node name="move_base" pkg="move_base" type="move_base" /> -->
+
 
   <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
     <rosparam file="$(find my_robot_2dnav)/config/costmap_common_params.yaml" command="load" ns="global_costmap" />

@@ -192,7 +192,7 @@ void SlamGMapping::init()
   if(!private_nh_.getParam("map_frame", map_frame_))
     map_frame_ = "map";
   if(!private_nh_.getParam("odom_frame", odom_frame_))
-    odom_frame_ = "camera_pose_frame";
+    odom_frame_ = "odom";
 
   private_nh_.param("transform_publish_period", transform_publish_period_, 0.05);
 

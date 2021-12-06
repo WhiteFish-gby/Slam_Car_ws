@@ -11,3 +11,4 @@ TrajectoryPlannerROS:
   holonomic_robot: true
 
   # 上面的第一部分参数定义机器人的速度限制。 第二部分定义了机器人的加速度的限制。
+  meter_scoring: true

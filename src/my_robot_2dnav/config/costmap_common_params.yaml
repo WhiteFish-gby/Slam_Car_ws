@@ -18,7 +18,7 @@ inflation_radius: 0.25 # 原来是0.55
 observation_sources: laser_scan_sensor #point_cloud_sensor
 # “observation_sources”参数定义了一系列传递空间信息给代价地图的传感器。每个传感器定义在下一行。
 
-laser_scan_sensor: {sensor_frame: base_laser, data_type: LaserScan, topic: sensor_msgs/LaserScan, marking: true, clearing: true}
+laser_scan_sensor: {sensor_frame: base_laser, data_type: LaserScan, topic: scan, marking: true, clearing: true}
 # 这一行设置“observation_sources”中提到的传感器。这个例子定义了 laser_scan_sensor。 
 # “frame_name”参数应设置为传感器坐标帧的名称，“data_type”参数应设置为LaserScan或PointCloud，
 # 这取决于主题使用的消息，“topic_name”应该设置为发布传感器数据的主题的名称。 
